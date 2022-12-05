@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
 		FileName = "Key",
 		SaveKey = false,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "HeBdaBidon412fs2wqfsjjjs"
+		Key = "яйца"
 	}
 })
 
@@ -38,7 +38,7 @@ local Section = Tab:CreateSection("Bullets")
 local Button = Tab:CreateButton({
 	Name = "Button Example",
 	Callback = function()
-		gun=require(game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
+		gun=require(game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
 gun.Bullets = 10
 	end,
 })
@@ -48,9 +48,9 @@ local Section = Tab:CreateSection("Recoil")
 local Button = Tab:CreateButton({
 	Name = "Button Example",
 	Callback = function()
-		gun=require(game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
+		gun=require(game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
 gun.VRecoil = { 0, 25 }
-        gun=require(game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
+        gun=require(game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
 gun.HRecoil = { 0, 25 }
 	end,
 })
@@ -58,7 +58,7 @@ gun.HRecoil = { 0, 25 }
 local Button = Tab:CreateButton({
 	Name = "Button Example",
 	Callback = function()
-		gun=require(game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
+		gun=require(game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Settings)
 gun.MaxSway = 0.25
 	end,
 })
@@ -68,15 +68,15 @@ local Section = Tab:CreateSection("Ammo")
 local Button = Tab:CreateButton({
 	Name = "Button Example",
 	Callback = function()
-		game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.StoredAmmo.MaxValue = 9999999
-		game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.StoredAmmo.Value = 9999999
+		game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.StoredAmmo.MaxValue = 9999999
+		game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.StoredAmmo.Value = 9999999
 	end,
 })
 
 local Button = Tab:CreateButton({
 	Name = "Button Example",
 	Callback = function()
-		game:GetService("Players").bicklou.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Ammo.Value = 9999999
+		game:GetService("Players").LocalPlayer.Backpack["AKS-74U"]["ACS_Modulo"].Variaveis.Ammo.Value = 9999999
 	end,
 })
 
